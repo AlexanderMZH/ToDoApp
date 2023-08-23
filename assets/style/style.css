@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #1E1E1E;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px ;   
+}
+.container .head .line{
+    width: 30px;
+    border: 1px solid #fff;
+}
+
+.container .head .head-line{
+    font-family: 'Racing Sans One', cursive;
+    text-transform: uppercase;
+    margin: 0 1%;
+    color: #fff;
+}
+
+.container .paper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0 40px 0;
+}
+.container .paper .sec-line{
+    width: 10%;
+    border: 1px solid #fff;
+}
+.container .paper img{
+    width: 20px;
+    margin: 0 15px;
+}
+
+.container .input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.container .input-container button{
+    font-family: 'Racing Sans One', cursive;
+    border-radius: 20px;
+    background: #4F4F4F;
+    color: #fff;
+    padding: 4.5px 7px;
+    border: none;
+    position: absolute;
+    right: 28%;
+    cursor: pointer;
+    list-style: none;
+}
+.container .input-container input{
+    width: 40%;
+    border-radius: 20px;
+    background: #D9D9D9;
+    padding: 5px 7px;
+    border: none;
+    position: relative;
+    outline: none;
+}
+.container .br-line{
+    border: 0.1px solid #FFFFFF;
+    width: 50%;
+    margin-top:20px ;
+    margin-bottom: 40px;
+}
+
+.container .output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.container .output .output-span{
+    color: #fff;
+    border-radius: 10px;
+    background-color: #222222;
+    width: 40%;
+    padding: 10px;
+}
+
+.container .output .output-img{
+    width: 27px;
+    padding: 5px;
+    background-color: #999999;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.loader-container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+.loader-container.active{
+    display: flex;
+  }
+
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+  
