@@ -9,7 +9,6 @@ let dataArray = []
 let data_id = -1
 
 function render_todo(){
-    // console.log(todo.value)
     if(todo.value === "" || !todo.value){
         return
     }
@@ -59,7 +58,6 @@ const fetchData = () =>{
     const {todo, id,completed} = data
     data.id = data_id
     dataArray.push(data)
-    console.log(dataArray)
 })
 .catch((error) => {
     console.log(error)
@@ -84,7 +82,6 @@ const deleteFetchData = (obj_id, output) => {
         dataArray = newArray
         output.remove()
         loader.classList.remove('active')
-        console.log(dataArray)
     })
     .catch((error) => {
         console.log(error)
